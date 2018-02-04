@@ -1,0 +1,25 @@
+An echo is when sound waves bounce off something and come back to you, so you hear yourself saying what you just said.  An echo is when sound waves bounce off something and come back to you, so you hear yourself saying what you just said.  Wait, did you hear that?
+
+You have been tasked to create an echo program.
+
+Program Input
+
+The first line of the file Prob01.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:
+
+A single line of text that should be echoed
+
+Example Input:
+
+2
+Code Quest rules!
+I’m definitely coming back next year.
+
+Program Output
+Your program should create an echo by printing each line twice, back to back.
+
+Example Output:
+
+Code Quest rules!
+Code Quest rules!
+I’m definitely coming back next year.
+I’m definitely coming back next year.
