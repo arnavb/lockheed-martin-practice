@@ -1,0 +1,5 @@
+2
+Bob,Joe,Steve,Mary,Ann
+Bob,Steve,Ann,Paula,Chris
+Bill,Ted,Liz,Quinn
+Quinn,Liz,Ken,Bill

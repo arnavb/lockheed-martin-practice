@@ -1,0 +1,46 @@
+Input File:  Prob05.in.txt
+
+Introduction
+
+A local charity has hired you to help organize their lists of donors.  The organization has a list of people who donated to the organization last year, and another list of this year’s donors.  The group wants to send emails to three groups of people:
+
+	•	People who donated last year but didn’t this year
+	•	People who donated both years
+	•	People who donated this year but didn’t last year
+
+Each group will receive a different email, so they need to know which donors belong to each group.
+
+Program Input
+
+The first line of the file Prob05.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:
+
+	•	The first line of each test case will contain a comma separated list of the names of last year’s donors.
+	•	The second line of each test case will contain a comma separated list of the names of this year’s donors.
+
+Example Input:
+
+2
+Bob,Joe,Steve,Mary,Ann
+Bob,Steve,Ann,Paula,Chris
+Bill,Ted,Liz,Quinn
+Quinn,Liz,Ken,Bill
+
+
+Program Output
+
+Each of your test cases should output three lines:
+
+	•	On the first line, output a comma separated list of donors who gave last year but not this year.
+	•	On the second line, output a comma separated list of donors who gave both last year and this year.
+	•	On the third line, output a comma separated list of donors who gave this year but not last year.
+
+Each list of names should be sorted alphabetically.
+
+Example Output:
+
+Joe,Mary
+Ann,Bob,Steve
+Chris,Paula
+Ted
+Bill,Liz,Quinn
+Ken
