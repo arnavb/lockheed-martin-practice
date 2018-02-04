@@ -1,0 +1,32 @@
+Input File:  Prob02.in.txt
+
+Introduction
+
+Sometimes when we type we just miss letters.  Other times we go to a programming competition and we’re asked to remove letters from perfectly good words.
+
+Your task is to write a program which given a String and an integer will print a new String missing the character at the given place.
+
+Program Input
+
+The first line of the file Prob02.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:
+
+	•	A single line containing a word, then a space, then a positive integer.  The integer tells us which character to remove from the string, and is 0-based (meaning that a 0 means take away the first letter).  The index given will always be valid – no tricks here!
+
+Example Input:
+
+4
+puppy 0
+kitten 4
+fish 1
+dog 2
+
+Program Output
+
+Your program should print the new word with the appropriate character missing.
+
+Example Output:
+
+uppy
+kittn
+fsh
+do
