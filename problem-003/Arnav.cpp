@@ -5,7 +5,7 @@
 int main()
 {
     
-    std::ifstream inputFile{ "Prob02.txt" };
+    std::ifstream inputFile{ "Prob03.in.txt" };
     
     if (inputFile.is_open())
     {
@@ -14,14 +14,12 @@ int main()
         
         for (int i = 0; i < numCases; ++i)
         {
-            std::string currentWord;
-            int removeIndex;
+            int firstNum;
+            int secondNum;
             
-            inputFile >> currentWord >> removeIndex;
+            inputFile >> firstNum >> secondNum;
             
-            currentWord.erase(currentWord.begin() + removeIndex);
-            
-            std::cout << currentWord << "\n";
+            std::cout << (firstNum + secondNum) << " " << (firstNum * secondNum) << "\n";
         }
     }
 }
