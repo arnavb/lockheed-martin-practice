@@ -1,8 +1,9 @@
-with open("Prob01.in.Txt") as prob1:
-    lines = prob1.readlines
-lines = [x.strip() for x in lines]
-number_of_lines = len(lines)
-Number_of_times = lines[1]
+with open("Prob01.in.txt") as prob1:
+    lines = prob1.readlines()
+
+Not = lines[1:]
 extra = lines.pop(0)
-for(x in extra):
-    print()
+
+for x in range(0, int(extra)) :
+    print(Not[x].replace("\n",""))
+    print(Not[x].replace("\n",""))
