@@ -8,7 +8,5 @@ for line in content:
     word = linearr[0]
     del linearr
     #pythons better
-    word = list(word)
-    word.pop(letter_to_pop)
-    word = ''.join(word)
+    word = word[:letter_to_pop] + word[letter_to_pop + 1:]
     print(word)
