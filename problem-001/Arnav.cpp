@@ -3,7 +3,7 @@
 
 int main()
 {
-    std::ifstream inputFile{ "Prob01.txt" };
+    std::ifstream inputFile{ "Prob01.in.txt" };
     
     if (inputFile.is_open())
     {

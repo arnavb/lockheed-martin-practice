@@ -1,4 +1,4 @@
-with open("Prob01.Txt") as prob1:
+with open("Prob01.in.Txt") as prob1:
     lines = prob1.readlines
 lines = [x.strip() for x in lines]
 number_of_lines = len(lines)
