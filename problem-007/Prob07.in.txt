@@ -1,0 +1,5 @@
+4
+Moreland:K,2B,1B,HR
+Andrus:BB,BB,2B,K
+Chirinos:1B,1B,3B
+Odor:1B,K,3B

@@ -1,0 +1,93 @@
+
+
+Input File:  Prob06.in.txt
+
+Introduction
+
+The International Civil Aviation Organization (ICAO) developed a system in the 1950s so that critical combinations of letters and numbers can be pronounced and understood by those exchanging voice messages by radio or telephone regardless of language or quality of the communication channel.  Today it is widely used and known as the phonetic alphabet, the US Army alphabet, ICAO alphabet, NATO alphabet, or spelling alphabet.  We probably hear it most in military applications or in movies.  It is made up of 26 words that are assigned to the 26 letters of the English alphabet as follows:
+
+Letter
+Code Word
+Letter
+Code Word
+A
+Alpha
+N
+November
+B
+Bravo
+O
+Oscar
+C
+Charlie
+P
+Papa
+D
+Delta
+Q
+Quebec
+E
+Echo
+R
+Romeo
+F
+Foxtrot
+S
+Sierra
+G
+Golf
+T
+Tango
+H
+Hotel
+U
+Uniform
+I
+India
+V
+Victor
+J
+Juliet
+W
+Whiskey
+K
+Kilo
+X
+Xray
+L
+Lima
+Y
+Yankee
+M
+Mike
+Z
+Zulu
+
+Your application should convert a string of text into its phonetic alphabet code.
+
+Program Input
+The first line of the file Prob06.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:
+
+•	The first line of each test case will be a positive integer N denoting how many lines of text the message contains.
+•	The next N lines will contain a string of text to be converted.
+
+
+Example Input:
+
+2
+2
+Code Quest
+Rocks
+1
+Lockheed
+
+Program Output
+
+Your program should print out the ICAO version of each string from the input.  Preserve spaces, and add a dash between letters of a word.  There will not be any punctuation in the input, only letters and spaces.
+
+Example Output:
+
+Charlie-Oscar-Delta-Echo Quebec-Uniform-Echo-Sierra-Tango
+Romeo-Oscar-Charlie-Kilo-Sierra
+Lima-Oscar-Charlie-Kilo-Hotel-Echo-Echo-Delta
+
