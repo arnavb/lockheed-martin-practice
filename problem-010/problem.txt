@@ -1,0 +1,46 @@
+
+
+Input File:  Prob10.in.txt
+
+Introduction
+
+The home keys on a keyboard are imperative to quick typing if you are a touch typist, but what if you are off just one key?  Imagine you accidentally placed your left index finger at D instead of F and your right index finger at H instead of J.  Translate the following message as if you were retyping it with the wrong home key finger placement.
+
+Program Input
+
+The first line of the file Prob10.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:
+
+•	The first line of each test case will be a positive integer N denoting how many lines of text the message contains.
+•	The next N lines will contain the message that needs to be translated.
+
+Input Constraints:
+•	The input messages will be case sensitive.  Since Shift is a wide key, the wrong hand placement has no effect on pressing that key.
+•	Your typing boundaries are:
+o	Top row: from Q to P
+o	Middle row: from A to L
+o	Bottom row: from Z to .
+o	There will be no numbers
+
+Example Input:
+
+2
+4
+Hickory dickory dock,
+The mouse ran up the clock,
+The clock struck one, the mouse ran down
+Hickory dickory dock.
+1
+Code Quest.
+
+Program Output
+Your program should print out what would appear if your hands were off one place to the left.  Here are some assumptions:
+•	Caps Lock starts out being off for each new test case.  Notice that attempting to hit the A key with your hands in the wrong place will turn caps lock on and off.  Shift-Caps Lock is the same as just hitting Caps Lock (in case there is a capital A in the original message).
+•	Tabs should be output as 4 spaces, not a real tab.
+
+Example Output:
+
+Guxjiet suxjiet sixjm
+Rgw niyaw eB YO RGW XKIXJM
+rGW XKIXJ AREYXJ IBWM RGW NIYAW Eb siqb
+Guxjiet suxjiet sixj,
+Xisw     ywar,

@@ -1,0 +1,45 @@
+Cryptography is the art of changing information in such a way that the average person will not be able to understand it, but whoever is meant to receive the information can reverse the changes and make it understandable.  Ciphers and codes have been used for millennia to hide secrets by both private individuals and powerful governments, and many major historical events have hinged on how effective those ciphers were at hiding information.
+
+A Vigenère cipher (named after a famous French cryptographer) uses a keyword to determine how to replace letters in the original message (the “plaintext”) to create the encrypted message (the “ciphertext”).  To use the Vigenère cipher, the first letter of the keyword is used to encrypt the first letter of the message.  The keyword letter is the start of a “cipher” alphabet, the same as the normal English alphabet, but shifted over to account for the new starting letter.  The plaintext letter is then replaced with the corresponding letter in the cipher alphabet.  The second letter of the keyword is then used to encode the second letter of the plaintext, and so on; when you run out of letters in the keyword, you start with the first keyword letter again.  If you encounter a space, just transfer it to the encoded message – only letters need to be encoded.
+
+Let’s use “CODE” as an example keyword, and “LOCKHEED” as a sample plaintext message.  First we need to build cipher alphabets for each letter in our keyword:
+
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+---------------------------------------------------
+C D E F G H I J K L M N O P Q R S T U V W X Y Z A B
+O P Q R S T U V W X Y Z A B C D E F G H I J K L M N
+D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+E F G H I J K L M N O P Q R S T U V W X Y Z A B C D
+C D E F G H I J K L M N O P Q R S T U V W X Y Z A B
+O P Q R S T U V W X Y Z A B C D E F G H I J K L M N
+D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+E F G H I J K L M N O P Q R S T U V W X Y Z A B C D
+
+Now that we have our cipher alphabets, we can start to encrypt our message.  The first letter in the message is L.  L is the 12th letter of the alphabet, so we need to replace it with the 12th letter in our first cipher alphabet, N.  The next letter is O (15th), and uses our second cipher alphabet, to be replaced with C.  We then encrypt C using the third alphabet (getting F), and K with the fourth alphabet (getting O).  Our keyword was only four letters long, so for the fifth letter in our message, we go back to the first cipher alphabet, and replace H with J.
+
+
+The final product of the encryption is: 
+Original: LOCKHEED
+Encrypted: NCFOJSHH
+
+Program Input
+
+The first line of the file Prob09.in.txt will contain a positive integer T denoting the number of test cases that follow.  Each test case will have the following input:
+
+•	A single line of uppercase text to encode
+•	A single uppercase word to act as the keyword
+
+Example Input:
+2
+LOCKHEED
+CODE
+CODE QUEST IS SO COOL
+QUICHE
+
+Program Output
+Your program should simply output each line of encoded text.
+
+Example Output:
+
+NCFOJSHH
+SILG XYUMB KZ WE WWQS
