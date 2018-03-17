@@ -1,0 +1,5 @@
+2
+Cape Canaveral Launch Site
+4 4 4 3 3
+Vandenberg Launch Site
+8 2 1 1 2 2 1 1 6
