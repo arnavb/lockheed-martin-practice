@@ -11,14 +11,19 @@ for idx, i in enumerate(content):
         chararr = list(i)
         limb = len(chararr)
         lastprint = ""
+        nextprint = ""
         for ind, cltr in enumerate(chararr):
             temp = cltr.upper()
             if temp != " ":
                 print(dictionary[temp], end='')
-                lastprint = dictionary[temp]
+                lastprint = "bruv"
+                try:
+                    nextprint = chararr[ind + 1]
+                except:
+                    nextprint = ""
             else:
                 print(" ", end='')
                 lastprint = " "
-            if lastprint != " " and ind < limb - 1:
+            if (lastprint != " ") and (ind < limb - 1) and (nextprint != " "):
                 print("-", end='')
         print("")
